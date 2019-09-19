@@ -21,7 +21,7 @@ Para instalar as bibliotecas use os seguintes comandos:
 - `npm install --save handlebars`
 
 # Rodando o Codigo em uma maquina ou um servidor local:
-Para rodar o codigo em uma maquina ou servidor local, utilize o seguinte codigo no terminal já dentro da pasta do projeto:
+Para rodar o codigo em uma maquina ou servidor local, utilize o seguinte comando no terminal já dentro da pasta do projeto:
 
 `node index.js`
 
