@@ -1,0 +1,16 @@
+<h2>Lista de Anotações:</h2>
+<hr>
+<!-- 'each' pede a renderização de um arquivo do post-->	
+{{#each posts}}
+<div class="card mt-4">
+    <div class="card-body">
+			<small>{{createdAt}}</small>
+			<h1>{{titulo}}</h1>
+			<p>{{conteudo}}</p>
+			<a href="/deletar/{{id}}"><button class="btn btn-danger">deletar</button> </a>
+		{{/each}}
+</div></div>
+	<br>
+<form action="/cad">
+	<button class="btn btn-success">Adicionar uma anotação</button>
+</form>
