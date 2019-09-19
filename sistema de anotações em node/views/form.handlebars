@@ -1,8 +1,12 @@
-<form action="/add" method="post">
-	<p>Titulo</p>
-	<input type="text" name="titulo">
-	<p>Conteudo</p>
-	<textarea name="conteudo"></textarea>
-	<br>
-	<button>Cadastrar</button>
-</form>
+</form><div class="card">
+	<div class="card-body">
+		<h4>Adicionar Post:</h4>
+		<form action="/add" method="post">
+			<label for="titulo">Titulo:</label>
+			<input type="text" name="titulo" class="form-control">
+			<label for="conteudo">Conteudo:</label>
+			<textarea name="conteudo" class="form-control"></textarea>
+			<br><button type="submit" class="btn btn-success mt-4">Criar Anotação</button>
+		</form>
+	</div>
+</div>
