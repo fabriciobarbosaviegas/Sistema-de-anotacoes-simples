@@ -19,3 +19,14 @@ Para instalar as bibliotecas use os seguintes comandos:
 - `npm install --save sequelize`
 - `npm install --save mysql2`
 - `npm install --save handlebars`
+
+# Rodando o Codigo em uma maquina ou um servidor local:
+Para rodar o codigo em uma maquina ou servidor local, utilize o seguinte codigo no terminal já dentro da pasta do projeto:
+
+`node index.js`
+
+após ser exibida a mensagem "Rodando!", abra o seu navegador e digite na barra de endereço a seguinte a URL:
+
+`localhost:8080`
+
+e pronto o codigo ja estara sendo executado.
