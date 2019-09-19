@@ -8,9 +8,11 @@
 			<h1>{{titulo}}</h1>
 			<p>{{conteudo}}</p>
 			<a href="/deletar/{{id}}"><button class="btn btn-danger">deletar</button> </a>
-		{{/each}}
+{{else}}
+	<p>Você ainda não fez nenhuma anotação</p>		
+{{/each}}
 </div></div>
-	<br>
-<form action="/cad">
+<br>
+<form action="/cad" class="container">
 	<button class="btn btn-success">Adicionar uma anotação</button>
 </form>
