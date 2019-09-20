@@ -1,4 +1,4 @@
-# Sistema-de-anota-es-simples
+# Sistema-de-anotações-simples
 Um sistema simples de anotações feito em node.js e mySQL.
 
 # Requisitos:
