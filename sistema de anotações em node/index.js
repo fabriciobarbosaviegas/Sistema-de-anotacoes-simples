@@ -20,9 +20,9 @@ const Post = require('./models/Post')
 	
 // Rotas
 
-// '.get' cria uma rota do tipo get
+	// '.get' cria uma rota do tipo get
 
-	app.get('/cad', function(req,res){
+		app.get('/cad', (req,res) => {
 
 	// 'render' renderiza o arquivo handlebars dentro da pasta views('form')
 
@@ -31,25 +31,25 @@ const Post = require('./models/Post')
 
 // pedido de exibição das postagens
 
-	app.get('/', function(req, res){
-		Post.findAll({order:[['id', 'desc']]}).then(function(posts){
+	app.get('/', (req, res) => {
+		Post.findAll({order:[['id', 'desc']]}).then((posts) => {
 			res.render('home', {posts: posts})
 		})
 	})
 
 // deletar posts
 
-	app.get('/deletar/:id', function(req, res){
-		Post.destroy({where: {"id": req.params.id}}).then(function(){
+	app.get('/deletar/:id', (req, res) => {
+		Post.destroy({where: {"id": req.params.id}}).then(() => {
 			res.redirect('/')
-		}).catch(function(erro){
-			res.send('postagem não encontrada')
+		}).catch((err) => {
+			res.send(`postagem não encontrada: ${err}`)
 		})
 	})
 
 // '.post' cria uma rota do tipo post
 
-	app.post('/add', function(req,res){
+	app.post('/add', (req,res) => {
 
 	// 'create' cria um registro em uma coluna do banco de dados(Post)
 
@@ -59,18 +59,18 @@ const Post = require('./models/Post')
 
 			titulo: req.body.titulo,
 			conteudo: req.body.conteudo
-		}).then(function(){
+		}).then(() => {
 
 		// 'redirect' redireciona para uma rota(/)
 
 			res.redirect('/')
-		}).catch(function(){
-			res.send('Ocorreu um erro' + erro)
+		}).catch((err) => {
+			res.send(`Ocorreu um erro: ${err}`)
 		})		
 	})
 
 // Criação do servidor local
 
-app.listen(8080, function(){
+app.listen(8080, () => {
 	console.log('Rodando!!')
 })
