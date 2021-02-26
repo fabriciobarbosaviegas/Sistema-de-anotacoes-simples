@@ -2,7 +2,7 @@
 Um sistema simples de anotações feito em node.js e mySQL.
 
 # Requisitos:
-Para utilizar este sistema sera necessario, obviamente instalar o node.js e o mySQL server em sua maquina ou servidor, além de instalar as 
+Para utilizar este sistema sera necessário, obviamente instalar o node.js e o mySQL server em sua maquina ou servidor, além das 
 seguintes bibliotecas:
 
 - Express
@@ -26,8 +26,8 @@ Para rodar o codigo em uma maquina ou servidor local, utilize o seguinte comando
 
 `node index.js`
 
-após ser exibida a mensagem "Rodando!", abra o seu navegador e digite na barra de endereço a seguinte a URL:
+Após ser exibida a mensagem "Rodando!", abra o seu navegador e digite na barra de endereço a seguinte URL:
 
 `localhost:8080`
 
-e pronto o codigo ja estara sendo executado.
+E pronto o codigo já estara sendo executado.
