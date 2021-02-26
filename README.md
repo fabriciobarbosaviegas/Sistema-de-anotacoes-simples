@@ -2,7 +2,7 @@
 Um sistema simples de anotações feito em node.js e mySQL.
 
 # Requisitos:
-Para utilizar este sistema sera necessario, obviamente instalar o node.js e o mySQL server em sua maquina ou servidor, alem de instalar as 
+Para utilizar este sistema sera necessario, obviamente instalar o node.js e o mySQL server em sua maquina ou servidor, além de instalar as 
 seguintes bibliotecas:
 
 - Express
