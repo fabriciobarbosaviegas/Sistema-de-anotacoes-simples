@@ -2,7 +2,7 @@ const Sequelize = require('sequelize')
 
 // Conexão com o banco de dados
 	
-	const sequelize = new Sequelize('postapp', 'root', 'frajola10', {
+	const sequelize = new Sequelize('postapp', 'root', 'senha', {
 		host: 'localhost',
 		dialect: 'mysql'
 	})
